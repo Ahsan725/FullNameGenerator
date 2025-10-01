@@ -8,7 +8,6 @@ public class FullNameApplication {
         String last;
         String suffix;
         String middle;
-        String fullname;
         System.out.println("Enter your first name?");
 
         Scanner scanner = new Scanner(System.in);
