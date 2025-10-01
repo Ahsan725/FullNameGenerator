@@ -23,6 +23,16 @@ public class FullNameApplication {
         System.out.println("What is your suffix?");
         suffix = scanner.nextLine();
 
-        System.out.println(fullname = first + " " + last + " " + middle + " " + suffix);
+        if (!middle.isEmpty() && (!suffix.isEmpty())){
+            System.out.println(fullname = first + " " + middle + " " + last + " " + suffix);
+        }else if (!middle.isEmpty()){
+            System.out.println(fullname = first + " " + middle + " " + last);
+        }else if(!suffix.isEmpty()){
+            System.out.println(fullname = first + " " + last + " " + suffix);
+        }else
+        {
+            System.out.println(fullname = first + " " + last);
+        }
+
     }
 }
