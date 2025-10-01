@@ -11,16 +11,16 @@ public class FullNameApplication {
         System.out.println("Enter your first name?");
 
         Scanner scanner = new Scanner(System.in);
-        first = scanner.nextLine();
+        first = scanner.nextLine().trim();
 
         System.out.println("Last Name: ");
-        last = scanner.nextLine()
+        last = scanner.nextLine().trim()
 ;
         System.out.println("Middle Name: ");
-        middle = scanner.nextLine();
+        middle = scanner.nextLine().trim();
 
         System.out.println("What is your suffix?");
-        suffix = scanner.nextLine();
+        suffix = scanner.nextLine().trim();
 
         if (!middle.isEmpty() && (!suffix.isEmpty())){
             System.out.println(first + " " + middle + " " + last + " " + suffix);
