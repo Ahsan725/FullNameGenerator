@@ -24,14 +24,14 @@ public class FullNameApplication {
         suffix = scanner.nextLine();
 
         if (!middle.isEmpty() && (!suffix.isEmpty())){
-            System.out.println(fullname = first + " " + middle + " " + last + " " + suffix);
+            System.out.println(first + " " + middle + " " + last + " " + suffix);
         }else if (!middle.isEmpty()){
-            System.out.println(fullname = first + " " + middle + " " + last);
+            System.out.println(first + " " + middle + " " + last);
         }else if(!suffix.isEmpty()){
-            System.out.println(fullname = first + " " + last + " " + suffix);
+            System.out.println(first + " " + last + " " + suffix);
         }else
         {
-            System.out.println(fullname = first + " " + last);
+            System.out.println(first + " " + last);
         }
 
     }
